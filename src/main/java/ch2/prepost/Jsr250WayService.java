@@ -15,11 +15,11 @@ public class Jsr250WayService {
      * 在构造函数完成后执行
      */
     @PostConstruct
-    public void init(){
+    public void init() {
         System.out.println("@jsr250-init-method");
     }
 
-    public Jsr250WayService(){
+    public Jsr250WayService() {
         super();
         System.out.println("初始化构造函数-jsr250WayService");
     }
@@ -28,7 +28,7 @@ public class Jsr250WayService {
      * 在bean销毁前执行
      */
     @PreDestroy
-    public void destroy(){
+    public void destroy() {
         System.out.println("@jsr250-destroy-method");
     }
 }

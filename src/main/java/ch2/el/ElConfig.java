@@ -75,6 +75,7 @@ public class ElConfig {
     /**
      * 注入配置文件需使用@PropertySource指定文件地址，若使用@Value注入，
      * 则需配置PropertySourcesPlaceholderConfigurer的bean
+     *
      * @return PropertySourcesPlaceholderConfigurer
      */
     @Bean
@@ -82,7 +83,7 @@ public class ElConfig {
         return new PropertySourcesPlaceholderConfigurer();
     }
 
-    public void  outputResource(){
+    public void outputResource() {
         try {
             System.out.println(normal);
             System.out.println(osName);
@@ -92,7 +93,7 @@ public class ElConfig {
             System.out.println(bookName);
             System.out.println(environment.getProperty("book.author"));
 
-        }catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

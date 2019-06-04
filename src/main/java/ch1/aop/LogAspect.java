@@ -43,11 +43,11 @@ public class LogAspect {
     }
 
     @Before("execution(* ch1.aop.DemoMethodService.*(..))")
-    public void before(JoinPoint joinPoint){
+    public void before(JoinPoint joinPoint) {
         MethodSignature methodSignature = (MethodSignature) joinPoint.getSignature();
         Method method = methodSignature.getMethod();
 
-        System.out.println("方法式拦截："+method.getName());
+        System.out.println("方法式拦截：" + method.getName());
     }
 
 }

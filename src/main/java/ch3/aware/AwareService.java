@@ -33,13 +33,13 @@ public class AwareService implements BeanNameAware, ResourceLoaderAware {
         this.resourceLoader = resourceLoader;
     }
 
-    public void output(){
-        System.out.println("Bean的名称："+beanName);
+    public void output() {
+        System.out.println("Bean的名称：" + beanName);
 
         Resource resource = resourceLoader.getResource("classpath:test.txt");
         try {
-            System.out.println("Resource加载文件内容："+ IOUtils.toString(resource.getInputStream()));
-        }catch (Exception e){
+            System.out.println("Resource加载文件内容：" + IOUtils.toString(resource.getInputStream()));
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }

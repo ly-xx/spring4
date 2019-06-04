@@ -15,13 +15,13 @@ public class ProfileConfig {
 
     @Bean
     @Profile("dev")
-    public DemoBean devDemoBean(){
+    public DemoBean devDemoBean() {
         return new DemoBean("from dev profile");
     }
 
     @Bean
     @Profile("prod")
-    public DemoBean prodDemoBean(){
+    public DemoBean prodDemoBean() {
         return new DemoBean("from prod profile");
     }
 }

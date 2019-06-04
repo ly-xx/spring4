@@ -15,12 +15,12 @@ import org.springframework.context.annotation.Configuration;
 public class PrePostConfig {
 
     @Bean(initMethod = "init", destroyMethod = "destroy")
-    BeanWayService beanWayService(){
+    BeanWayService beanWayService() {
         return new BeanWayService();
     }
 
     @Bean
-    Jsr250WayService jsr250WayService(){
+    Jsr250WayService jsr250WayService() {
         return new Jsr250WayService();
     }
 }

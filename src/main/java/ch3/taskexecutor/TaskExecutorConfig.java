@@ -8,10 +8,10 @@ import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 
 import java.util.concurrent.Executor;
-import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * 配置类
+ *
  * @author liaoxiaoxia
  * @version 1.0.0
  * @date 2019/6/4 12:00
@@ -20,7 +20,7 @@ import java.util.concurrent.ThreadPoolExecutor;
 @Configuration
 @ComponentScan("ch3.taskexecutor")
 @EnableAsync // 开启异步任务支持
-public class TaskExecutorConfig implements AsyncConfigurer{
+public class TaskExecutorConfig implements AsyncConfigurer {
 
 
     @Override
