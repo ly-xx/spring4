@@ -1,4 +1,4 @@
-package com.lxx.wisely;
+package com.lxx.config;
 
 /**
  * 用户页面显示

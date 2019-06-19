@@ -1,6 +1,6 @@
 package com.lxx;
 
-import com.lxx.wisely.Person;
+import com.lxx.config.Person;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.stereotype.Controller;
