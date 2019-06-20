@@ -29,6 +29,9 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         // 注册节点，并指定使用SockJS协议
         registry.addEndpoint("/endpointWisely").withSockJS();
+
+        // 点对点式使用
+        registry.addEndpoint("/endpointChat").withSockJS();
     }
 
     /**
@@ -38,6 +41,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
         // 使用广播式，需配置topic消息代理
-        registry.enableSimpleBroker("/topic");
+        // 使用点对点式，在广播式基础上添加 queue
+        registry.enableSimpleBroker("/topic", "/queue");
     }
 }
