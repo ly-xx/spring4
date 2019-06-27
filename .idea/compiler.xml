@@ -11,6 +11,7 @@
         <module name="ch6_4" />
         <module name="ch7_2" />
         <module name="ch7_6" />
+        <module name="ch8_2" />
         <module name="spring4" />
       </profile>
     </annotationProcessing>
@@ -20,6 +21,7 @@
       <module name="ch6_4" target="1.8" />
       <module name="ch7_2" target="1.8" />
       <module name="ch7_6" target="1.8" />
+      <module name="ch8_2" target="1.8" />
       <module name="spring4" target="1.8" />
       <module name="springmvc" target="1.8" />
     </bytecodeTargetLevel>
